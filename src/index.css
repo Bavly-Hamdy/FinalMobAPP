@@ -1,0 +1,249 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 201 100% 40%; /* Health blue */
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 201 94% 86%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 201 100% 40%;
+
+    --radius: 0.75rem;
+
+    /* Health App Specific Colors */
+    --health-primary-50: 201 100% 96%;
+    --health-primary-100: 201 100% 92%;
+    --health-primary-200: 201 100% 86%;
+    --health-primary-300: 201 100% 70%;
+    --health-primary-400: 201 100% 56%;
+    --health-primary-500: 201 100% 50%;
+    --health-primary-600: 201 100% 40%;
+    --health-primary-700: 201 100% 30%;
+    --health-primary-800: 201 100% 20%;
+    --health-primary-900: 201 100% 10%;
+
+    --health-success-50: 142 76% 95%;
+    --health-success-100: 142 76% 90%;
+    --health-success-200: 142 76% 80%;
+    --health-success-300: 142 76% 65%;
+    --health-success-400: 142 76% 50%;
+    --health-success-500: 142 76% 42%;
+    --health-success-600: 142 76% 36%;
+    --health-success-700: 142 76% 28%;
+    --health-success-800: 142 76% 22%;
+    --health-success-900: 142 76% 16%;
+
+    --health-warning-50: 48 96% 95%;
+    --health-warning-100: 48 96% 90%;
+    --health-warning-200: 48 96% 80%;
+    --health-warning-300: 48 96% 65%;
+    --health-warning-400: 48 96% 50%;
+    --health-warning-500: 48 96% 46%;
+    --health-warning-600: 48 96% 42%;
+    --health-warning-700: 48 96% 34%;
+    --health-warning-800: 48 96% 28%;
+    --health-warning-900: 48 96% 22%;
+
+    --health-danger-50: 0 84% 95%;
+    --health-danger-100: 0 84% 90%;
+    --health-danger-200: 0 84% 80%;
+    --health-danger-300: 0 84% 65%;
+    --health-danger-400: 0 84% 50%;
+    --health-danger-500: 0 84% 46%;
+    --health-danger-600: 0 84% 42%;
+    --health-danger-700: 0 84% 34%;
+    --health-danger-800: 0 84% 28%;
+    --health-danger-900: 0 84% 22%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 201 100% 40%; /* Health blue */
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 201 94% 36%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 201 100% 70%;
+
+    /* Dark mode specific health colors with increased contrast */
+    --health-primary-50: 201 100% 20%;
+    --health-primary-100: 201 100% 25%;
+    --health-primary-200: 201 100% 30%;
+    --health-primary-300: 201 100% 40%;
+    --health-primary-400: 201 100% 50%;
+    --health-primary-500: 201 100% 60%;
+    --health-primary-600: 201 100% 70%;
+    --health-primary-700: 201 100% 80%;
+    --health-primary-800: 201 100% 90%;
+    --health-primary-900: 201 100% 95%;
+  }
+
+  /* High contrast mode */
+  .high-contrast {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 0%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 201 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 201 100% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 40%;
+    --input: 0 0% 20%;
+    --ring: 201 100% 60%;
+
+    /* High contrast health colors */
+    --health-primary-500: 201 100% 60%;
+    --health-success-500: 120 100% 40%;
+    --health-warning-500: 48 100% 50%;
+    --health-danger-500: 0 100% 50%;
+  }
+
+  .high-contrast.dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --health-primary-500: 201 100% 70%;
+    --health-success-500: 120 100% 60%;
+    --health-warning-500: 48 100% 60%;
+    --health-danger-500: 0 100% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Accessibility focus styles */
+  *:focus-visible {
+    @apply outline-2 outline-offset-2 outline-primary;
+  }
+
+  /* Screen reader only class */
+  .sr-only {
+    @apply absolute w-px h-px p-0 -m-px overflow-hidden whitespace-nowrap border-0;
+  }
+}
+
+/* Health theme specific classes */
+@layer components {
+  .vital-card {
+    @apply bg-white dark:bg-gray-800 p-4 rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm;
+  }
+  
+  .health-gradient {
+    @apply bg-gradient-to-tr from-health-primary-600 to-health-primary-400;
+  }
+  
+  .reading-normal {
+    @apply text-health-success-500;
+  }
+  
+  .reading-warning {
+    @apply text-health-warning-500;
+  }
+  
+  .reading-critical {
+    @apply text-health-danger-500;
+  }
+
+  /* Animated elements */
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-pulse-gentle {
+    animation: pulse-gentle 2s infinite;
+  }
+
+  /* Offline mode indicator */
+  .offline-indicator {
+    @apply fixed top-1 right-1 px-2 py-1 text-xs bg-health-warning-500 text-white rounded-md z-50;
+  }
+}
+
+/* Keyframe animations */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes pulse-gentle {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
